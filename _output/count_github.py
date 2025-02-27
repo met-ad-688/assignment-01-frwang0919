@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the CSV files
-files = ["data/question_tags.csv", "data/questions.csv"]  # Replace with actual file names
+files = ["question_tags.csv", "questions.csv"]
 count = 0
 
 for file in files:
@@ -19,8 +19,3 @@ for file in files:
 
 # Print the total count
 print(f"Total lines containing 'GitHub': {count}")
-
-# Save the result to a text file
-with open("_output/github_count.txt", "w") as f:
-    f.write(f"Total lines containing 'GitHub': {count}\n")
-
